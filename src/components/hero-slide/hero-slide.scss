@@ -1,9 +1,9 @@
-@use "../../scss/" as *;
+// @use "../../scss/" as *;
+@import "../../scss/index.scss";
 
 .hero-slide {
     margin-bottom: 3rem;
 }
-
 .hero-slide__item {
     padding: 9rem 0;
     width: 100%;
