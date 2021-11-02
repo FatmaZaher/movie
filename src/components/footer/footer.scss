@@ -2,7 +2,7 @@
 
 .footer {
     position: relative;
-    padding: 6rem 2rem;
+    padding: 6rem 30px;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
         &__logo {
             @include flex(center, center);
-            margin-bottom: 3rem;
+            margin-bottom: 50px;
         }
 
         &__menus {
@@ -27,13 +27,13 @@
         &__menu {
             @include flex(flex-start, flex-start);
             flex-direction: column;
-            margin-top: 1rem;
+            margin-top: 20px;
 
-            font-size: 1.5rem;
+            font-size: 25px;
             font-weight: 600;
 
             & > * ~ * {
-                margin-top: 1rem;
+                margin-top: 20px;
             }
         }
     }
