@@ -105,6 +105,7 @@ const MovieSearch = (props) => {
       }
     };
     document.addEventListener("keyup", enterEvent);
+    console.log(`history isL: ${history}`);
     return () => {
       document.removeEventListener("keyup", enterEvent);
     };

@@ -10,6 +10,7 @@ const CastList = (props) => {
     const getCredits = async () => {
       const res = await tmdbApi.credits(category, props.id);
       setCasts(res.cast.slice(0, 5));
+      console.log(res)
     };
     getCredits();
   }, [category, props.id]);

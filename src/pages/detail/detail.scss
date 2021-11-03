@@ -74,7 +74,7 @@
         border-radius: $border-radius;
         font-size: 13px;
         font-weight: 600;
-        background-color: $body-bg;
+        @include overlay();
       }
     }
     .overview{
