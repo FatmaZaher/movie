@@ -1,40 +1,40 @@
-@use "../../scss/" as *;
+@import "../../scss/index.scss";
 
 .footer {
-    position: relative;
-    padding: 6rem 30px;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: relative;
+  padding: 50px 30px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    &__content {
-        max-width: 1000px;
+  &__content {
+    max-width: 1000px;
 
-        &__logo {
-            @include flex(center, center);
-            margin-bottom: 50px;
-        }
-
-        &__menus {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-
-            @include mobile {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        &__menu {
-            @include flex(flex-start, flex-start);
-            flex-direction: column;
-            margin-top: 20px;
-
-            font-size: 25px;
-            font-weight: 600;
-
-            & > * ~ * {
-                margin-top: 20px;
-            }
-        }
+    &__logo {
+      @include flex(center, center);
+      margin-bottom: 50px;
     }
+
+    &__menus {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      @include mobile {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &__menu {
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      margin-top: 20px;
+
+      font-size: 25px;
+      font-weight: 600;
+
+      & > * ~ * {
+        margin-top: 20px;
+      }
+    }
+  }
 }
